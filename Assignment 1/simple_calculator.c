@@ -24,7 +24,7 @@ int main(void) {
     }
 
     //operator
-    printf("Enter operator(+, -, * /):");
+    printf("Enter operator(+, -, *, /, %%):");
     fgets(input,sizeof(input), stdin);
     sscanf(input, "%c", &op);
 
@@ -41,6 +41,13 @@ int main(void) {
         case '+' : result = num1 + num2; break;
         case '-' : result = num1 - num2; break;
         case '*' : result = num1 * num2; break;
+        case '%' :
+            if ((int)num2 == 0) {
+                printf("You can't divide by zero");
+                return 1;
+            }
+        result = (int)num1 % (int)num2;
+        break;
         case '/' :
             if(num2 == 0){
                 printf("You cant divide by zero");
