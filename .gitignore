@@ -1,0 +1,39 @@
+# Ignore compiled binaries
+*.exe
+*.out
+*.o
+*.obj
+*.dll
+*.so
+*.a
+
+# Ignore VS Code build output
+.vscode/
+*.code-workspace
+
+# Ignore Code::Blocks build folders
+bin/
+obj/
+*.depend
+*.layout
+
+# Ignore temporary/editor files
+*.log
+*.tmp
+*.bak
+*~
+.DS_Store
+
+# Ignore backup folders from editors
+__pycache__/
+Thumbs.db
+
+# Prevent accidental inclusion of assignment build files
+*/a.exe
+*/a.out
+*/a.o
+
+# Ignore MSYS2 / MinGW generated files
+*.gcda
+*.gcno
+*.gch
