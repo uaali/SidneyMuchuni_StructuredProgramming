@@ -63,7 +63,7 @@ int main(void) {
     }
 
 
-    printf("Results:\n %.2f %c %.2f = %.2f", num1,op,num2,result);
+    printf("Results:\n%.2f %c %.2f = %.2f", num1,op,num2,result);
 
 
     return 0;
